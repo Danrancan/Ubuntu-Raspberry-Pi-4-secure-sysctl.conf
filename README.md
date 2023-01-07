@@ -14,7 +14,7 @@ or
 #net.ipv6.conf.eth0.disable_ipv6 = 1
 #net.ipv6.conf.wlan0.disable_ipv6 = 1
 ```
-in /etc/sysctl.conf (`sudo nano /etc/sysctl.conf` should open up your file to edit it).
+in `/etc/sysctl.conf` (`sudo nano /etc/sysctl.conf` should open up your file to edit it).
 
 ## Install
 ### Install on your server (using a symlink)
