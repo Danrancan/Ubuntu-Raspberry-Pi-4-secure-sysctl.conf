@@ -19,13 +19,13 @@ in `/etc/sysctl.conf` (`sudo nano /etc/sysctl.conf` should open up your file to 
 
 ## Install (on your Ubuntu 20.04 Server using a symlink)
 ```
-sudo cp /etc/sysctl.conf /etc/sysctl.conf.orig && sudo git clone https://github.com/Danrancan/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf.git /etc/ && sudo chown root:root /etc/Ubuntu-Raspberry-Pi-4-Secure-sysctl.conf/sysctl.conf && sudo ln -nsf /etc/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf/sysctl.conf /etc/sysctl.conf && sudo sysctl -p
+sudo cp /etc/sysctl.conf /etc/sysctl.conf.orig && sudo git clone https://github.com/Danrancan/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf.git /etc/ && sudo chown root:root /etc/Ubuntu-Raspberry-Pi-4-Secure-sysctl.conf/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf && sudo ln -nsf /etc/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf /etc/sysctl.conf && sudo sysctl -p
 ```
 ### Update (with the latest version on your Ubuntu 20.04 Server)
 ```
-cd /etc/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf/ && sudo git pull origin main && sudo chown root:root /etc/Ubuntu-Raspberry-Pi-4-Secure-sysctl.conf/sysctl.conf && sudo sysctl -p
+cd /etc/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf/ && sudo git pull origin main && sudo chown root:root /etc/Ubuntu-Raspberry-Pi-4-Secure-sysctl.conf/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf && sudo sysctl -p
 ```
 ### Uninstall and restore original (/etc/sysctl.conf.orig) configuration (on your Ubuntu 20.04 Server).
 ```
-sudo rm /etc/sysctl.conf && sudo rm -r /etc/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf && sudo mv /etc/sysctl.conf.bak /etc/sysctl.conf && sudo sysctl -p
+sudo rm /etc/sysctl.conf && sudo rm -rf /etc/Ubuntu-Raspberry-Pi-4-secure-sysctl.conf && sudo mv /etc/sysctl.conf.bak /etc/sysctl.conf && sudo sysctl -p
 ```
